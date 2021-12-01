@@ -3,14 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8933FDBF2582979D00EE6D2A /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 8933FDBE2582979D00EE6D2A /* PartialSheet */; };
 		897FB3B7257B904800032D70 /* SetviceHoursApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FB3B6257B904800032D70 /* SetviceHoursApp.swift */; };
 		897FB3B9257B904800032D70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FB3B8257B904800032D70 /* ContentView.swift */; };
 		897FB3BB257B904900032D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897FB3BA257B904900032D70 /* Assets.xcassets */; };
 		897FB3BE257B904900032D70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897FB3BD257B904900032D70 /* Preview Assets.xcassets */; };
+		89A2C70F258661EA0099BAD6 /* SelectedMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A2C70E258661EA0099BAD6 /* SelectedMenuView.swift */; };
+		89EDE49225810E2100463CAA /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EDE49125810E2100463CAA /* Report.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		897FB3BA257B904900032D70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		897FB3BD257B904900032D70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		897FB3BF257B904900032D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89A2C70E258661EA0099BAD6 /* SelectedMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedMenuView.swift; sourceTree = "<group>"; };
+		89EDE49125810E2100463CAA /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8933FDBF2582979D00EE6D2A /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				897FB3B6257B904800032D70 /* SetviceHoursApp.swift */,
+				89EDE49125810E2100463CAA /* Report.swift */,
 				897FB3B8257B904800032D70 /* ContentView.swift */,
+				89A2C70E258661EA0099BAD6 /* SelectedMenuView.swift */,
 				897FB3BA257B904900032D70 /* Assets.xcassets */,
 				897FB3BF257B904900032D70 /* Info.plist */,
 				897FB3BC257B904900032D70 /* Preview Content */,
@@ -85,6 +93,9 @@
 			dependencies = (
 			);
 			name = SetviceHours;
+			packageProductDependencies = (
+				8933FDBE2582979D00EE6D2A /* PartialSheet */,
+			);
 			productName = SetviceHours;
 			productReference = 897FB3B3257B904800032D70 /* SetviceHours.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 897FB3AA257B904800032D70;
+			packageReferences = (
+				8933FDBD2582979D00EE6D2A /* XCRemoteSwiftPackageReference "PartialSheet" */,
+			);
 			productRefGroup = 897FB3B4257B904800032D70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +154,8 @@
 			files = (
 				897FB3B9257B904800032D70 /* ContentView.swift in Sources */,
 				897FB3B7257B904800032D70 /* SetviceHoursApp.swift in Sources */,
+				89A2C70F258661EA0099BAD6 /* SelectedMenuView.swift in Sources */,
+				89EDE49225810E2100463CAA /* Report.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8933FDBD2582979D00EE6D2A /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8933FDBE2582979D00EE6D2A /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8933FDBD2582979D00EE6D2A /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 897FB3AB257B904800032D70 /* Project object */;
 }
